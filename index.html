@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarvesh S | AI & DS Student Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Sarvesh S, a B.Tech AI & DS student, showcasing projects in ML, Web Dev and more."
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Protocol Warning -->
+    <div id="protocol-warning" style="display:none; position:fixed; top:0; left:0; width:100%; background:#ef4444; color:white; text-align:center; padding:10px; z-index:10000; font-weight:bold; font-size:0.9rem;">
+      ⚠️ Features like Chatbot and Database won't work on this URL. Please use <span style="text-decoration:underline;">http://localhost:3000</span> instead.
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader-content">
+        <div class="loader-circle"></div>
+        <span class="loader-text">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Mouse follow gradient glow -->
+    <div class="mouse-glow"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <a href="#" class="logo">S<span>arvesh</span></a>
+        <ul class="nav-links">
+                    <li><a href="#hero" class="active magnetic" data-key="nav-home">Home</a></li>
+                    <li><a href="#about" class="magnetic" data-key="nav-about">About</a></li>
+                    <li><a href="#skills" class="magnetic" data-key="nav-skills">Skills</a></li>
+                    <li><a href="#projects" class="magnetic" data-key="nav-projects">Projects</a></li>
+                    <li><a href="#education" class="magnetic" data-key="nav-edu">Education</a></li>
+                    <li><a href="#contact" class="magnetic" data-key="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-extra">
+            <button id="theme-toggle" aria-label="Toggle realization" class="magnetic">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="menu-btn magnetic">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+                <div class="hero-image-container">
+                    <div class="profile-frame">
+                        <img src="profile.jpeg" alt="Sarvesh S Profile" class="profile-img">
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-greeting">Hello, I'm</h2>
+            <h1 class="hero-title">Sarvesh S</h1>
+            <h3 class="hero-subtitle">B.Tech AI & DS Student</h3>
+            <p class="hero-typing">
+              <span id="typing-text"></span><span class="cursor">|</span>
+            </p>
+            <div class="hero-btns">
+              <a href="#projects" class="btn btn-primary ripple"
+                >View Projects</a
+              >
+              <a href="#contact" class="btn btn-secondary ripple">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll-down">
+          <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="about-section section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                First-year B.Tech Artificial Intelligence & Data Science student
+                at <strong>SNS College of Technology, Coimbatore</strong>.
+                Passionate about AI, problem-solving, and continuous learning.
+              </p>
+              <p>
+                I thrive on turning complex data into actionable insights and
+                building intelligent systems that can solve real-world problems.
+                My journey in AI & DS is driven by a curiosity for how
+                algorithms shape our world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section section">
+        <div class="container">
+          <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Python -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 85"></circle>
+                            </svg>
+                            <i class="fab fa-python skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <div class="skill-percent">85%</div>
+                        <p class="skill-details">Core Programming & Tkinter</p>
+                    </div>
+                    <!-- NumPy -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 85"></circle>
+                            </svg>
+                            <i class="fas fa-calculator skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">NumPy</h3>
+                        <div class="skill-percent">85%</div>
+                    </div>
+                    <!-- Pandas -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 80"></circle>
+                            </svg>
+                            <i class="fas fa-table skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">Pandas</h3>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <!-- Matplotlib -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 75"></circle>
+                            </svg>
+                            <i class="fas fa-chart-area skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">Matplotlib</h3>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                    <!-- Scikit-learn -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 80"></circle>
+                            </svg>
+                            <i class="fas fa-microchip skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">Scikit-learn</h3>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <!-- C++ -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 75"></circle>
+                            </svg>
+                            <i class="fas fa-code skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">C++</h3>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                    <!-- Java -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 70"></circle>
+                            </svg>
+                            <i class="fab fa-java skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                    <!-- HTML & CSS -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 90"></circle>
+                            </svg>
+                            <i class="fab fa-html5 skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name">HTML & CSS</h3>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                    <!-- Problem-solving -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 80"></circle>
+                            </svg>
+                            <i class="fas fa-brain skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name" data-key="skill-ps">Problem Solving</h3>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <!-- Communication -->
+                    <div class="skill-card glass tilt-card">
+                        <div class="skill-visual">
+                            <svg class="skill-svg" viewBox="0 0 110 110">
+                                <circle cx="55" cy="55" r="50"></circle>
+                                <circle class="progress" cx="55" cy="55" r="50" style="--percent: 85"></circle>
+                            </svg>
+                            <i class="fas fa-comments skill-icon"></i>
+                        </div>
+                        <h3 class="skill-name" data-key="skill-comm">Communication</h3>
+                        <div class="skill-percent">85%</div>
+                    </div>
+                </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section section">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card tilt-card">
+              <div class="project-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=800"
+                  alt="House Price Prediction"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-tags">
+                    <span>Python</span>
+                    <span>ML</span>
+                    <span>Scikit-learn</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Bangalore House Price Prediction</h3>
+                <p class="project-desc">
+                  Built ML regression model using Scikit-learn, Pandas, NumPy.
+                  Data cleaning, preprocessing, feature selection, and
+                  prediction based on location and features.
+                </p>
+                <a
+                  href="https://github.com/sarveshsundaram26"
+                  target="_blank"
+                  class="btn btn-outline ripple"
+                >
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2: Health Tech Care -->
+            <div class="project-card tilt-card">
+              <div class="project-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&q=80&w=800"
+                  alt="Health Tech Care"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Health Tech Care 🩺</h3>
+                <p class="project-desc">
+                  A high-tech healthcare platform featuring an **Advanced Calling System** and **GPS Tracking System** for efficient emergency monitoring and medical assistance.
+                </p>
+                <a
+                  href="https://github.com/sarveshsundaram26/healthtech-final"
+                  target="_blank"
+                  class="btn btn-outline ripple"
+                >
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education-section section">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2025 - Present</div>
+              <div class="timeline-content">
+                <h3>B.Tech AI & DS</h3>
+                <p>SNS College of Technology, Coimbatore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="certifications-section section">
+        <div class="container">
+          <h2 class="section-title">Certifications</h2>
+          <div class="certs-grid">
+            <div class="cert-card glass">
+              <div class="cert-icon"><i class="fab fa-python"></i></div>
+              <div class="cert-info">
+                <h3>Python Completion</h3>
+                <p>Certification of Completion</p>
+              </div>
+            </div>
+            <div class="cert-card glass">
+              <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+              <div class="cert-info">
+                <h3>Analytic Vidhya</h3>
+                <p>Data Science Completion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section section">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>7402410615</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>sarveshsundaram26@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>
+                    <a
+                      href="https://github.com/sarveshsundaram26"
+                      target="_blank"
+                      >github.com/sarveshsundaram26</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" required />
+                <label for="name">Your Name</label>
+                <span class="bar"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" required />
+                <label for="email">Your Email</label>
+                <span class="bar"></span>
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="5" required></textarea>
+                <label for="message">Your Message</label>
+                <span class="bar"></span>
+              </div>
+              <button type="submit" class="btn btn-primary ripple">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+      <div id="chat-header">
+        <div class="chat-header-info">
+          <i class="fas fa-robot"></i>
+          <div>
+            <h4 style="margin:0; font-size: 1rem;">Sarvesh AI</h4>
+            <span style="font-size: 0.7rem; opacity: 0.8;"><i class="fas fa-circle" style="color: #4ade80; font-size: 0.5rem; margin-right: 4px;"></i>Online</span>
+          </div>
+        </div>
+        <button id="close-chat" style="background:none; border:none; color:white; cursor:pointer;"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="chat-messages">
+        <div class="message ai-msg">Hi! I'm Sarvesh's AI. Want to know about his projects or skills?</div>
+      </div>
+      <div id="chat-input-area">
+        <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+        <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <button id="chat-toggle" class="magnetic"><i class="fas fa-comment-dots"></i></button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-socials">
+            <a href="https://github.com/sarveshsundaram26" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p class="copyright">
+            &copy; 2026 Sarvesh S. Built with passion for AI.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Success Message -->
+    <div id="contact-success">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <!-- Custom JS (Cache Busted) -->
+    <script type="module" src="js/script.js?v=1.20"></script>
+
+    <!-- Preloader Safety Fallback (Ensures page shows even if JS fails) -->
+    <script>
+      setTimeout(() => {
+        const loader = document.querySelector('.preloader');
+        if (loader && loader.style.display !== 'none') {
+          loader.style.opacity = '0';
+          setTimeout(() => loader.style.display = 'none', 500);
+          console.warn('Preloader hidden by safety fallback.');
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>

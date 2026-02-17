@@ -1,0 +1,18 @@
+{
+  "name": "sarvesh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio for Sarvesh S",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@supabase/supabase-js": "^2.95.3"
+  }
+}
